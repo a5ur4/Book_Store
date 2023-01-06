@@ -195,6 +195,7 @@ body {
 }
 
 .genre_card {
+    padding: 5px;
     margin-right: 20px;
     margin-left: 20px;
     height: 200px;
@@ -226,4 +227,95 @@ body {
 
 .genre_card:hover img {
     box-shadow: 0px 0px 40px 3px var(--color2);
+}
+
+#newests {
+    background-color: var(--color4);
+}
+
+#newests h2 {
+    margin-left: 170px;
+    color: var(--color2);
+}
+
+#linha_section {
+    width: 75%;
+    border: 1px solid var(--color2);
+}
+
+#newests section {
+    display: flex;
+}
+
+.newbook_card {
+    margin-top: 25px;
+    text-align: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin: 0 auto;
+}
+
+.newbook_card h3 {
+    color: var(--color2);
+}
+
+.newbook_card_img {
+    height: 300px;
+    width: 200px;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.newbook_card_img:hover {
+    height: 320px;
+    width: 220px;
+    border-radius: 0px 0px 0px 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.newbook_card a {
+    text-decoration: none;
+    color: var(--color2);
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+}
+
+.newbook_card a:hover {
+    text-shadow: 0px 0px 9px var(--color2);
+}
+
+.newbook_buttons button {
+    background-color: var(--color2);
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.newbook_buttons button img {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+}
+
+.newbook_buttons button:hover {
+    width: 150px;
+    border-radius: 10px;
+}
+
+.linha {
+    border: 1px solid var(--color2);
+    width: 100px;
+}
+
+#linha_middle {
+    border: 1px solid var(--color2);
+    width: 200px;
 }
