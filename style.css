@@ -12,6 +12,17 @@ body {
     --color5: #0a0503;
 }
 
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: var(--color5);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    height: 20%;
+    background-color: var(--color2);
+}
+
 #head_title {
     display: flex;
     background-color: var(--color4);
@@ -318,4 +329,114 @@ body {
 #linha_middle {
     border: 1px solid var(--color2);
     width: 200px;
+}
+
+#recomend {
+    background-color: var(--color2);
+}
+
+.section_head #linha_section {
+    border: 1px solid var(--color4);
+}
+
+.section_head h2 {
+    margin-left: 170px;
+}
+
+.recomend_card {
+    display: flex;
+    margin-left: 100px;
+}
+
+.recomend_card hr {
+    border: 1px solid var(--color5);
+    margin-left: 10px;
+}
+
+.recomend_card_img {
+    height: 300px;
+    width: 200px;
+    margin-left: 10px;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.recomend_card_img:hover {
+    height: 400px;
+    width: 300px;
+    margin-top: -10px;
+    border-radius: 0px;
+    box-shadow: 0px 0px 29px 4px var(--color4);
+}
+
+.recomend_card nav {
+    color: var(--color2);
+    margin-left: 30px;
+}
+
+.recomend_card_text {
+    background-color: var(--color4);
+    width: 75%;
+    border-radius: 20px;
+    margin-right: 100px;
+    line-height: 12px;
+}
+
+.recomend_card_text div {
+    margin-left: 30px;
+    margin-top: 35px;
+}
+
+.recomend_card_text div h3 {
+    text-decoration: line-through;
+    color: red;
+}
+
+.seemore {
+    width: 200px;
+    height: 50px;
+    background-color: var(--color2);
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.seemore a {
+    text-decoration: none;
+    color: var(--color4);
+    font-size: medium;
+    transition: 0.5s ease-in-out;
+}
+
+.seemore:hover {
+    width: 300px;
+    background-color: var(--color4);
+    border: 1px solid var(--color2);
+    box-shadow: 0px 0px 29px 4px var(--color2);
+}
+
+.seemore:hover a {
+    color: var(--color2);
+}
+
+.recomend_card_text .newbook_buttons {
+    margin-left: 650px;
+    margin-top: -240px;
+    text-align: center;
+}
+
+.recomend_card_text .newbook_buttons img {
+    margin-left: -1px;
+}
+
+.stars {
+    display: flex;
+}
+
+.stars img {
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: -20px;
 }
