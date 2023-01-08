@@ -331,7 +331,7 @@ body {
     width: 200px;
 }
 
-#recomend {
+#promotion {
     background-color: var(--color2);
 }
 
@@ -343,17 +343,32 @@ body {
     margin-left: 170px;
 }
 
-.recomend_card {
+.section_head {
+    line-height: 14px;
+}
+
+#promotion .section_head a {
+    color: var(--color5);
+}
+
+.section_head a {
+    margin-left: 170px;
+    color: var(--color2);
+    font-size: large;
+    font-weight: bold;
+}
+
+.promotion_card {
     display: flex;
     margin-left: 100px;
 }
 
-.recomend_card hr {
+.promotion_card hr {
     border: 1px solid var(--color5);
     margin-left: 10px;
 }
 
-.recomend_card_img {
+.promotion_card_img {
     height: 300px;
     width: 200px;
     margin-left: 10px;
@@ -361,7 +376,7 @@ body {
     transition: 0.5s ease-in-out;
 }
 
-.recomend_card_img:hover {
+.promotion_card_img:hover {
     height: 400px;
     width: 300px;
     margin-top: -10px;
@@ -369,12 +384,12 @@ body {
     box-shadow: 0px 0px 29px 4px var(--color4);
 }
 
-.recomend_card nav {
+.promotion_card nav {
     color: var(--color2);
     margin-left: 30px;
 }
 
-.recomend_card_text {
+.promotion_card_text {
     background-color: var(--color4);
     width: 75%;
     border-radius: 20px;
@@ -382,12 +397,12 @@ body {
     line-height: 12px;
 }
 
-.recomend_card_text div {
+.promotion_card_text div {
     margin-left: 30px;
     margin-top: 35px;
 }
 
-.recomend_card_text div h3 {
+.promotion_card_text div h3 {
     text-decoration: line-through;
     color: red;
 }
@@ -419,13 +434,13 @@ body {
     color: var(--color2);
 }
 
-.recomend_card_text .newbook_buttons {
+.promotion_card_text .newbook_buttons {
     margin-left: 650px;
     margin-top: -240px;
     text-align: center;
 }
 
-.recomend_card_text .newbook_buttons img {
+.promotion_card_text .newbook_buttons img {
     margin-left: -1px;
 }
 
@@ -439,4 +454,140 @@ body {
     margin-left: 5px;
     margin-right: 5px;
     margin-top: -20px;
+}
+
+.hidden {
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+}
+
+#most_wanted {
+    background-color: var(--color5);
+}
+
+#most_wanted .section_head {
+    color: var(--color2);
+}
+
+#most_wanted #linha_section {
+    border: 1px solid var(--color2);
+}
+
+#flex_items {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: -30px;
+}
+
+.heart {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    line-height: 14px;
+    color: var(--color2);
+    padding: 50px;
+}
+
+.loader {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    transform: rotate(45deg);
+    transform-origin: 40px 40px;
+}
+
+.loader div {
+    top: 32px;
+    left: 32px;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: var(--color2);
+    animation: loader45 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.loader div:after,
+.loader div:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: var(--color2);
+}
+
+.loader div:before {
+    left: -24px;
+    border-radius: 50% 0 0 50%;
+}
+
+.loader div:after {
+    top: -24px;
+    border-radius: 50% 50% 0 0;
+}
+
+@keyframes loader45 {
+    0% {
+        transform: scale(0.95);
+    }
+
+    5% {
+        transform: scale(1.1);
+    }
+
+    39% {
+        transform: scale(0.85);
+    }
+
+    45% {
+        transform: scale(1);
+    }
+
+    60% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+.heart_book_img {
+    height: 300px;
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 34px 2px var(--color2);
+    transition: 0.5s ease-in-out;
+}
+
+.heart a img:hover {
+    height: 350px;
+    width: 230px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 0px;
+}
+
+.heart .seemore:hover {
+    width: 300px;
+    background-color: var(--color5);
+    border: 1px solid var(--color2);
+    box-shadow: 0px 0px 29px 4px var(--color2);
+}
+
+.heart nav img {
+    height: 70px;
+    width: 70px;
+    margin-top: 100px;
 }
