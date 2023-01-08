@@ -11,3 +11,10 @@ function promocao() {
         behavior: "smooth",
     });
 }
+
+function most_wanted() {
+    window.scrollTo({
+        top: 3300,
+        behavior: "smooth",
+    });
+}
