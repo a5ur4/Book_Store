@@ -199,6 +199,7 @@ body {
     background-color: var(--color5);
     height: 140px;
     display: flex;
+    justify-content: center;
 }
 
 #genre a {
@@ -207,36 +208,33 @@ body {
 
 .genre_card {
     padding: 5px;
-    margin-right: 20px;
-    margin-left: 20px;
-    height: 200px;
-    width: 300px;
+    margin-right: 40px;
+    margin-left: 40px;
+    width: 80px;
+    height: 80px;
     text-align: center;
     align-items: center;
     transition: 0.5s ease-in-out;
+    background-color: var(--color2);
+    border-radius: 100%;
+    margin-top: 15px;
 }
 
 .genre_card img {
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    margin-top: 15px;
-    border: 2px solid var(--color2);
+    width: 60px;
+    height: 60px;
     transition: 0.5s ease-in-out;
+    margin-top: 5px;
 }
 
 .genre_card h5 {
     color: var(--color1);
     font-weight: bold;
-    margin-top: -1px;
 }
 
 .genre_card:hover {
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-.genre_card:hover img {
+    margin-left: 70px;
+    margin-right: 70px;
     box-shadow: 0px 0px 40px 3px var(--color2);
 }
 
@@ -295,6 +293,18 @@ body {
 
 .newbook_card a:hover {
     text-shadow: 0px 0px 9px var(--color2);
+}
+
+.book_genre button {
+    border: none;
+    background-color: var(--color2);
+    border-radius: 10px;
+    height: 20px;
+}
+
+.book_genre button a {
+    text-decoration: none;
+    color: var(--color5);
 }
 
 .newbook_buttons button {
@@ -366,6 +376,7 @@ body {
 .promotion_card hr {
     border: 1px solid var(--color5);
     margin-left: 10px;
+    margin-top: -1px;
 }
 
 .promotion_card_img {
@@ -399,12 +410,21 @@ body {
 
 .promotion_card_text div {
     margin-left: 30px;
-    margin-top: 35px;
+    margin-top: 10px;
 }
 
 .promotion_card_text div h3 {
     text-decoration: line-through;
     color: red;
+}
+
+.promotion_card_text_position {
+    display: flex;
+
+}
+
+.promotion_card_text_position button {
+    margin-top: 17px;
 }
 
 .seemore {
@@ -453,7 +473,7 @@ body {
     width: 20px;
     margin-left: 5px;
     margin-right: 5px;
-    margin-top: -20px;
+    margin-top: -1px;
 }
 
 .hidden {
