@@ -18,3 +18,15 @@ function most_wanted() {
         behavior: "smooth",
     });
 }
+
+function contact() {
+    window.scrollTo({
+        top: 4300,
+        behavior: "smooth",
+    });
+}
+
+function alert_login() {
+    var id = document.getElementById("nome").value;
+    alert("Uma mensagem foi enviada para seu email " + id);
+}
